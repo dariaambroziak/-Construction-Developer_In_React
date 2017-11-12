@@ -15,11 +15,13 @@
   "homepage": "",
   "dependencies": {
     "google-map-react": "^0.24.0",
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-grid-gallery": "^0.4.0",
     "react-icons": "^2.2.7",
-    "react-router": "^3.2.0"
+    "react-router": "^3.2.0",
+    "redux": "^3.7.2",
+    "video-react": "^0.8.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
