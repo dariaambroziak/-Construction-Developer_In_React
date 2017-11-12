@@ -1,0 +1,60 @@
+.frame{
+  background-color: white;
+
+  h2{
+      font-family: 'Oswald', sans-serif;
+      color:white;
+  }
+}
+
+.item__form{
+  width: 100%;
+  cursor: default;
+}
+
+.item__form:hover{
+  background-color: #d6d6c2;
+}
+
+
+.send{
+  width: 100%;
+  padding: 2%;
+  background-color: rgb(185, 21, 129);
+  color: grey;
+  box-shadow: 10px 6px 16px -4px rgba(0,0,0,0.75);
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.send:hover{
+  opacity: 0.7;
+}
+
+/// FOOTER ///
+.iconBox {
+  padding: 1%;
+  text-align: center;
+  position: relative;
+
+}
+.iconSocial {
+  font-size: 30px;
+  color:  #575757;
+  padding-right: 2px;
+  padding-left: 2px;
+  float:left;
+  text-align: center;
+}
+.iconSocial:hover {
+  color: #626262;
+}
+.textFooter {
+  float: right;
+  line-height: 10px;
+  font-size: 11px;
+	text-transform: uppercase;
+  text-align: right;
+	color: black;
+  padding: 1%;
+}

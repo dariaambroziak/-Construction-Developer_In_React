@@ -1,0 +1,139 @@
+@import 'media_queries';
+
+@media (max-width: #{$tablet-width}) {
+
+  .showMap{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+
+
+    h2{
+      text-align: center;
+      padding: 10px;
+    }
+
+    p{
+      text-indent: 50px;
+      text-align: justify;
+
+    }
+  }
+
+  .list__ul{
+    width: 60vw;
+    left: 50vw;
+    position: relative;
+    font-size: 20px;
+    padding: 0px;
+  }
+
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+
+  .showMap{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+
+    h2{
+      text-align: center;
+      padding: 20px;
+    }
+
+    p{
+      text-indent: 50px;
+      text-align: justify;
+      letter-spacing: 3px;
+    }
+  }
+
+  .list__ul{
+    width: 70vw;
+    height: 30%;
+    left: 50vw;
+    position: relative;
+    font-size: 20px;
+    padding: 0px;
+  }
+
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+  .showMap{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+
+    h2{
+      text-align: center;
+      padding: 30px;
+    }
+
+    p{
+      text-indent: 50px;
+      text-align: justify;
+      letter-spacing: 3px;
+    }
+  }
+
+  .list__ul{
+    width: 60vw;
+    left: 50vw;
+    position: relative;
+    font-size: 20px;
+    padding: 0px;
+  }
+
+}
+
+.YOUR-CLASS-NAME:hover{
+  transform:perspective(300px);
+  animation:animacjaMarkera 4s linear infinite;
+}
+
+@keyframes animacjaMarkera
+{
+  0% { transform:perspective(300px) rotateY(0); }
+  100% { transform:perspective(300px) rotateY(360deg); }
+}
+
+
+
+.list__li{
+  display:block;
+	outline:0;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+  margin: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+
+}
+
+.boxs{
+  display: block;
+  padding: 0px;
+}
+
+.boxYellow{
+  overflow: hidden;
+  background-color: yellow;
+
+}
+
+.boxPink{
+  overflow: hidden;
+  background-color: pink;
+}
+
+.boxBlue{
+  overflow: hidden;
+  background-color: blue;
+}
+
+.boxRed{
+  overflow: hidden;
+  background-color: red;
+}

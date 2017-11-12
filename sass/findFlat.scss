@@ -1,0 +1,32 @@
+.perfectFlat{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.flats__search{
+  color:#000!important;
+  background-color:#e5e3e3!important;
+  padding:8px 26px;
+  margin-bottom: 3px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	white-space:nowrap;
+
+}
+
+.flats {
+  width: 100%;
+  background-image: url('../photos/baby.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.flats__tr {
+  color: #ff0066;
+  background-color: white;
+  padding: 10px 0px;
+}
