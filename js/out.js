@@ -14436,6 +14436,30 @@ var _classnames = __webpack_require__(122);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _locations = __webpack_require__(275);
+
+var _locations2 = _interopRequireDefault(_locations);
+
+var _offerFlats = __webpack_require__(276);
+
+var _offerFlats2 = _interopRequireDefault(_offerFlats);
+
+var _gallery = __webpack_require__(277);
+
+var _gallery2 = _interopRequireDefault(_gallery);
+
+var _contact = __webpack_require__(278);
+
+var _contact2 = _interopRequireDefault(_contact);
+
+var _storey = __webpack_require__(279);
+
+var _storey2 = _interopRequireDefault(_storey);
+
+var _footer = __webpack_require__(280);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14563,7 +14587,7 @@ var SectionNav = function (_React$Component) {
                     onClick: function onClick() {
                       return (0, _reactScrollToComponent2.default)(_this2.OfferFlats, { align: 'middle', ease: 'inCirc', duration: 1000 });
                     } },
-                  'FIND A FLAT'
+                  'FLAT'
                 )
               ),
               _react2.default.createElement(
@@ -14619,7 +14643,7 @@ var SectionNav = function (_React$Component) {
                 ref: function ref(section) {
                   _this2.Locations = section;
                 } },
-              _react2.default.createElement(Locations, null)
+              _react2.default.createElement(_locations2.default, null)
             ),
             _react2.default.createElement(
               'section',
@@ -14627,7 +14651,7 @@ var SectionNav = function (_React$Component) {
                 ref: function ref(section) {
                   _this2.OfferFlats = section;
                 } },
-              _react2.default.createElement(OfferFlats, null)
+              _react2.default.createElement(_offerFlats2.default, null)
             ),
             _react2.default.createElement(
               'section',
@@ -14635,7 +14659,7 @@ var SectionNav = function (_React$Component) {
                 ref: function ref(section) {
                   _this2.Storey = section;
                 } },
-              _react2.default.createElement(Storey, null)
+              _react2.default.createElement(_storey2.default, null)
             ),
             _react2.default.createElement(
               'section',
@@ -14643,7 +14667,7 @@ var SectionNav = function (_React$Component) {
                 ref: function ref(section) {
                   _this2.Gallery = section;
                 } },
-              _react2.default.createElement(Gallery, null)
+              _react2.default.createElement(_gallery2.default, null)
             ),
             _react2.default.createElement(
               'section',
@@ -14651,9 +14675,9 @@ var SectionNav = function (_React$Component) {
                 ref: function ref(section) {
                   _this2.Contact = section;
                 } },
-              _react2.default.createElement(Contact, null)
+              _react2.default.createElement(_contact2.default, null)
             ),
-            _react2.default.createElement(Footer, null)
+            _react2.default.createElement(_footer2.default, null)
           )
         )
       );
@@ -14663,34 +14687,11 @@ var SectionNav = function (_React$Component) {
   return SectionNav;
 }(_react2.default.Component);
 
-var NotFound = function (_React$Component2) {
-  _inherits(NotFound, _React$Component2);
-
-  function NotFound() {
-    _classCallCheck(this, NotFound);
-
-    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
-  }
-
-  _createClass(NotFound, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'h1',
-        null,
-        '404,Nothing is here'
-      );
-    }
-  }]);
-
-  return NotFound;
-}(_react2.default.Component);
-
 /* ------ MAIN Sections ------ */
 
 
-var SliderHome = function (_React$Component3) {
-  _inherits(SliderHome, _React$Component3);
+var SliderHome = function (_React$Component2) {
+  _inherits(SliderHome, _React$Component2);
 
   function SliderHome() {
     _classCallCheck(this, SliderHome);
@@ -14708,8 +14709,8 @@ var SliderHome = function (_React$Component3) {
   return SliderHome;
 }(_react2.default.Component);
 
-var Invest = function (_React$Component4) {
-  _inherits(Invest, _React$Component4);
+var Invest = function (_React$Component3) {
+  _inherits(Invest, _React$Component3);
 
   function Invest() {
     _classCallCheck(this, Invest);
@@ -14740,803 +14741,34 @@ var Invest = function (_React$Component4) {
   return Invest;
 }(_react2.default.Component);
 
-/* ------ lOCALIZATION Sections ------ */
+var NotFound = function (_React$Component4) {
+  _inherits(NotFound, _React$Component4);
 
-var List = function (_React$Component5) {
-  _inherits(List, _React$Component5);
+  function NotFound() {
+    _classCallCheck(this, NotFound);
 
-  function List(props) {
-    _classCallCheck(this, List);
-
-    return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));
+    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
   }
 
-  _createClass(List, [{
+  _createClass(NotFound, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'ul',
-        { className: 'list__ul' },
-        this.props.lists.map(function (param, index) {
-          return _react2.default.createElement(
-            'li',
-            { className: 'list__li', key: index },
-            param.text
-          );
-        })
-      );
-    }
-  }]);
-
-  return List;
-}(_react2.default.Component);
-
-var AnyReactComponent = function (_React$Component6) {
-  _inherits(AnyReactComponent, _React$Component6);
-
-  function AnyReactComponent(props) {
-    _classCallCheck(this, AnyReactComponent);
-
-    var _this7 = _possibleConstructorReturn(this, (AnyReactComponent.__proto__ || Object.getPrototypeOf(AnyReactComponent)).call(this, props));
-
-    _this7.handleClick = function (e) {
-      _this7.props.clickFunction(e);
-    };
-
-    return _this7;
-  }
-
-  _createClass(AnyReactComponent, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
+        'h1',
         null,
-        _react2.default.createElement('img', { src: this.props.img_src, className: 'YOUR-CLASS-NAME', 'data-lat': this.props.lat, 'data-color': this.props.color,
-          onClick: this.handleClick }),
-        _react2.default.createElement('b', { style: { visibility: this.props.windows } })
+        '404,Nothing is here'
       );
     }
   }]);
 
-  return AnyReactComponent;
-}(_react2.default.Component);
-
-var Locations = function (_React$Component7) {
-  _inherits(Locations, _React$Component7);
-
-  function Locations(props) {
-    _classCallCheck(this, Locations);
-
-    var _this8 = _possibleConstructorReturn(this, (Locations.__proto__ || Object.getPrototypeOf(Locations)).call(this, props));
-
-    _this8.handleClickWindows = function (e) {
-      var newMarkers = _this8.state.markers;
-      var listMarkers = _this8.state.markersList;
-
-      for (var i = 0; i < newMarkers.length; i++) {
-
-        if (newMarkers[i].lat === Number(e.target.getAttribute('data-lat'))) {
-          newMarkers[i].windows === 'hidden' ? newMarkers[i].windows = 'visible' : newMarkers[i].windows = 'hidden';
-        }
-      }
-      listMarkers = [];
-      for (var _i = 0; _i < newMarkers.length; _i++) {
-        if (e.target.getAttribute('data-color') === newMarkers[_i].color) {
-          listMarkers.push(newMarkers[_i]);
-        }
-      }
-
-      _this8.setState({
-        markers: newMarkers,
-        markersList: listMarkers
-      });
-    };
-
-    _this8.state = {
-      markers: [],
-      markersList: []
-    };
-    return _this8;
-  }
-
-  _createClass(Locations, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-
-      this.setState({
-        markers: [{ lat: 52.32181907768039, lng: 20.948610305786133, img_src: 'photos/Markers/yellow_MarkerA.png', text: 'A: Primary school nr.344', windows: 'hidden', color: 'yellow' }, { lat: 52.327675, lng: 20.944563099999982, img_src: 'photos/Markers/yellow_MarkerB.png', text: 'B: Kindergarten nr.226', windows: 'hidden', color: 'yellow' }, { lat: 52.328188, lng: 20.945760000000064, img_src: 'photos/Markers/yellow_MarkerC.png', text: 'C: Nursery nr.36', windows: 'hidden', color: 'yellow' }, { lat: 52.3209503, lng: 20.94310500000006, img_src: 'photos/Markers/yellow_MarkerD.png', text: 'D: Batern country', windows: 'hidden', color: 'yellow' }, { lat: 52.3298739, lng: 20.950973999999974, img_src: 'photos/Markers/yellow_MarkerE.png', text: 'E: Fairy land', windows: 'hidden', color: 'yellow' }, { lat: 52.326454, lng: 20.950946899999963, img_src: 'photos/Markers/blue_MarkerA.png', text: 'A: Żabka', windows: 'hidden', color: 'blue' }, { lat: 52.325912, lng: 20.94531489999997, img_src: 'photos/Markers/blue_MarkerB.png', text: 'B: M&L Delikatesy', windows: 'hidden', color: 'blue' }, { lat: 52.3222018, lng: 20.95015539999997, img_src: 'photos/Markers/blue_MarkerC.png', text: 'C: DH Tarchomin', windows: 'hidden', color: 'blue' }, { lat: 52.32268939999999, lng: 20.94270670000003, img_src: 'photos/Markers/blue_MarkerD.png', text: 'D: Żabka', windows: 'hidden', color: 'blue' }, { lat: 52.327899, lng: 20.943962499999998, img_src: 'photos/Markers/blue_MarkerE.png', text: 'E: Sklep ABC', windows: 'hidden', color: 'blue' }, { lat: 52.3262, lng: 20.94945000000007, img_src: 'photos/Markers/pink_MarkerA.png', text: 'A: Talarowa 01', windows: 'hidden', color: 'pink' }, { lat: 52.32417, lng: 20.946270000000027, img_src: 'photos/Markers/pink_MarkerB.png', text: 'B: Erazma z Zakroczymia 01', windows: 'hidden', color: 'pink' }, { lat: 52.32489, lng: 20.94759010000007, img_src: 'photos/Markers/pink_MarkerC.png', text: 'C: Erazma z Zakroczymia 02', windows: 'hidden', color: 'pink' }, { lat: 52.32283, lng: 20.944790000000012, img_src: 'photos/Markers/pink_MarkerD.png', text: 'D: Mehoffera 04', windows: 'hidden', color: 'pink' }, { lat: 52.32281256416483, lng: 20.94393253326416, img_src: 'photos/Markers/pink_MarkerE.png', text: 'E: Mehoffera 05', windows: 'hidden', color: 'pink' }, { lat: 52.3251735, lng: 20.945689600000037, img_src: 'photos/Markers/red_MarkerA.png', text: 'A: Medicover', windows: 'hidden', color: 'red' }, { lat: 52.321751, lng: 20.948411899999996, img_src: 'photos/Markers/red_MarkerB.png', text: 'B: dr n. med. Dorota Kapiszewska-Dzedzej', windows: 'hidden', color: 'red' }, { lat: 52.3269005, lng: 20.942221000000018, img_src: 'photos/Markers/red_MarkerC.png', text: 'C: lek. med. Trojanowski Piotr', windows: 'hidden', color: 'red' }, { lat: 52.3283427, lng: 20.949323999999933, img_src: 'photos/Markers/red_MarkerD.png', text: 'D: Dentica Stomatologia Rodzinna Dorota Giza-Padzińska', windows: 'hidden', color: 'red' }, { lat: 52.319041, lng: 20.957176900000036, img_src: 'photos/Markers/red_MarkerE.png', text: 'E: LUX MED', windows: 'hidden', color: 'red' }, { lat: 52.3253636, lng: 20.949414700000034, img_src: 'photos/family_files/marker-cat-7.png', text: 'It is here', windows: 'hidden', color: 'brown' }]
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this9 = this;
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'showMap' },
-        _react2.default.createElement(
-          'h2',
-          null,
-          'LOCALIZATION'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Near the investment of Neo Block there are schools and kindergartens, health centers and service and retail outlets. There are network stores and numerous local shops waiting for you. There are also a bank, post office, restaurant, sushi bar and pizzeria. The beautiful parks are popular for walks.'
-        ),
-        _react2.default.createElement(
-          'div',
-          { style: { position: 'relative' } },
-          _react2.default.createElement(
-            _googleMapReact2.default,
-            {
-              bootstrapURLKeys: { key: "AIzaSyANC6u2qaMm1coCYI1KtOmlJzwV2C8lyA8" },
-              defaultCenter: this.props.center,
-              defaultZoom: this.props.zoom,
-              style: { height: '500px' }
-            },
-            this.state.markers.map(function (marker, i) {
-              return _react2.default.createElement(AnyReactComponent, {
-                lat: marker.lat,
-                lng: marker.lng,
-                img_src: marker.img_src,
-                text: marker.text,
-                windows: marker.windows,
-                clickFunction: _this9.handleClickWindows,
-                key: marker.lat,
-                color: marker.color
-              });
-            }),
-            _react2.default.createElement(List, { lists: this.state.markersList })
-          )
-        )
-      );
-    }
-  }]);
-
-  return Locations;
-}(_react2.default.Component);
-
-Locations.defaultProps = {
-  center: { lat: 52.3253636, lng: 20.95241470000002 },
-  zoom: 15
-
-};
-
-///////////////////// FIND THE PERFECT FLAT ////////////////////////////////
-
-var OfferFlats = function (_React$Component8) {
-  _inherits(OfferFlats, _React$Component8);
-
-  function OfferFlats(props) {
-    _classCallCheck(this, OfferFlats);
-
-    var _this10 = _possibleConstructorReturn(this, (OfferFlats.__proto__ || Object.getPrototypeOf(OfferFlats)).call(this, props));
-
-    _this10.changeBox = function () {
-      _this10.setState({
-        available: _this10.state.available ? false : true
-      });
-    };
-
-    _this10.changeFilterFloor = function (text) {
-      _this10.setState({
-        filterFloor: text
-      });
-    };
-
-    _this10.changeFilterRoom = function (room) {
-      _this10.setState({
-        filterRoom: room
-      });
-    };
-
-    _this10.changeFilterArea = function (area) {
-      _this10.setState({
-        filterArea: area
-      });
-    };
-
-    _this10.state = {
-      filterFloor: '',
-      available: false,
-      filterRoom: '',
-      filterArea: '0'
-    };
-    return _this10;
-  }
-
-  _createClass(OfferFlats, [{
-    key: 'render',
-    value: function render() {
-      var flats = [{ floor: "4", room: "3", area: "43", available: false }, { floor: "2", room: "2", area: "56", available: true }, { floor: "2", room: "4", area: "32", available: true }, { floor: "1", room: "2", area: "45", available: true }, { floor: "2", room: "1", area: "68", available: false }, { floor: "3", room: "2", area: "36", available: true }, { floor: "1", room: "3", area: "33", available: true }, { floor: "2", room: "5", area: "44.5", available: true }, { floor: "3", room: "1", area: "62", available: false }, { floor: "1", room: "3", area: "35", available: false }, { floor: "2", room: "5", area: "44.6", available: true }, { floor: "3", room: "1", area: "63", available: false }, { floor: "1", room: "3", area: "34", available: false }, { floor: "4", room: "3", area: "43.2", available: false }, { floor: "2", room: "2", area: "56.2", available: true }, { floor: "2", room: "4", area: "33", available: true }, { floor: "1", room: "2", area: "45.4", available: true }, { floor: "2", room: "1", area: "68.7", available: false }, { floor: "3", room: "3", area: "36.8", available: true }, { floor: "1", room: "3", area: "33.2", available: true }, { floor: "2", room: "5", area: "44.3", available: true }, { floor: "3", room: "2", area: "62.6", available: false }, { floor: "1", room: "3", area: "35.1", available: false }, { floor: "2", room: "5", area: "44.3", available: true }, { floor: "3", room: "2", area: "63.5", available: false }, { floor: "1", room: "3", area: "34.7", available: false }];
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(SearchBar1, { filterF: this.state.filterFloor, filterR: this.state.filterRoom,
-          filterA: this.state.filterArea, available: this.state.available,
-          changeBox: this.changeBox,
-          filterFloor: this.changeFilterFloor, filterRoom: this.changeFilterRoom,
-          filterArea: this.changeFilterArea }),
-        _react2.default.createElement(CatTable1, { flats: flats, filterF: this.state.filterFloor, filterR: this.state.filterRoom,
-          filterA: this.state.filterArea, filterAv: this.state.available })
-      );
-    }
-  }]);
-
-  return OfferFlats;
-}(_react2.default.Component);
-
-var SearchBar1 = function (_React$Component9) {
-  _inherits(SearchBar1, _React$Component9);
-
-  function SearchBar1() {
-    var _ref;
-
-    var _temp, _this11, _ret;
-
-    _classCallCheck(this, SearchBar1);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this11 = _possibleConstructorReturn(this, (_ref = SearchBar1.__proto__ || Object.getPrototypeOf(SearchBar1)).call.apply(_ref, [this].concat(args))), _this11), _this11.handlerCheckBox = function () {
-      // rozwiązanie problemu event.target.checked
-      if (typeof _this11.props.changeBox === 'function') {
-        _this11.props.changeBox();
-      }
-    }, _this11.handlerSearchFloor = function (event) {
-      if (typeof _this11.props.filterFloor === 'function') {
-        _this11.props.filterFloor(event.target.value);
-      }
-    }, _this11.handlerSearchRoom = function (event) {
-      if (typeof _this11.props.filterRoom === 'function') {
-        _this11.props.filterRoom(event.target.value);
-      }
-    }, _this11.handlerSearchArea = function (event) {
-      if (typeof _this11.props.filterArea === 'function') {
-        _this11.props.filterArea(event.target.value);
-      }
-    }, _temp), _possibleConstructorReturn(_this11, _ret);
-  }
-
-  _createClass(SearchBar1, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'perfectFlat' },
-        _react2.default.createElement(
-          'h2',
-          { className: 'flats__tr' },
-          _react2.default.createElement(
-            'b',
-            null,
-            'FIND THE PERFECT FLAT'
-          )
-        ),
-        _react2.default.createElement(
-          'form',
-          { className: 'flats__search' },
-          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4', type: 'text', placeholder: 'Floor', onChange: this.handlerSearchFloor }),
-          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4', type: 'text', placeholder: 'Rooms', onChange: this.handlerSearchRoom }),
-          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4', type: 'text', placeholder: 'Minimum area', onChange: this.handlerSearchArea }),
-          _react2.default.createElement(
-            'label',
-            { className: 'col-sm-6 col-md-12 col-lg-12' },
-            _react2.default.createElement('input', { type: 'checkbox', checked: this.props.available, onChange: this.handlerCheckBox }),
-            'Available'
-          )
-        )
-      );
-    }
-  }]);
-
-  return SearchBar1;
-}(_react2.default.Component);
-
-var CatTable1 = function (_React$Component10) {
-  _inherits(CatTable1, _React$Component10);
-
-  function CatTable1() {
-    _classCallCheck(this, CatTable1);
-
-    return _possibleConstructorReturn(this, (CatTable1.__proto__ || Object.getPrototypeOf(CatTable1)).apply(this, arguments));
-  }
-
-  _createClass(CatTable1, [{
-    key: 'render',
-    value: function render() {
-
-      var rows = [];
-      var lastCategory = null;
-      var filtersF = this.props.filterF;
-      var filtersR = this.props.filterR;
-      var filtersA = parseInt(this.props.filterA);
-      var checkBox = this.props.filterAv;
-
-      console.log(this.props.flats);
-      this.props.flats.forEach(function (flat) {
-
-        var flatArea = parseInt(flat.area);
-
-        if (flat.floor.includes(filtersF) && flat.room.includes(filtersR) && flatArea > filtersA && (flat.available === true || checkBox === false)) {
-          rows.push(_react2.default.createElement(CatRow1, { flat: flat, key: flat.area }));
-        }
-        lastCategory = flat.floor;
-      });
-
-      return _react2.default.createElement(
-        'table',
-        { className: 'flats' },
-        _react2.default.createElement(
-          'thead',
-          null,
-          _react2.default.createElement(
-            'tr',
-            { className: 'flats__tr' },
-            _react2.default.createElement(
-              'th',
-              null,
-              ' FLOOR '
-            ),
-            _react2.default.createElement(
-              'th',
-              null,
-              ' ROOMS '
-            ),
-            _react2.default.createElement(
-              'th',
-              null,
-              ' AREA '
-            ),
-            _react2.default.createElement(
-              'th',
-              null,
-              ' AVAILABLE '
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'tbody',
-          null,
-          rows
-        )
-      );
-    }
-  }]);
-
-  return CatTable1;
-}(_react2.default.Component);
-
-var CatRow1 = function (_React$Component11) {
-  _inherits(CatRow1, _React$Component11);
-
-  function CatRow1() {
-    _classCallCheck(this, CatRow1);
-
-    return _possibleConstructorReturn(this, (CatRow1.__proto__ || Object.getPrototypeOf(CatRow1)).apply(this, arguments));
-  }
-
-  _createClass(CatRow1, [{
-    key: 'render',
-    value: function render() {
-
-      var open = this.props.flat.available ? "available " : "not available";
-
-      return _react2.default.createElement(
-        'tr',
-        null,
-        _react2.default.createElement(
-          'td',
-          null,
-          this.props.flat.floor
-        ),
-        _react2.default.createElement(
-          'td',
-          null,
-          this.props.flat.room
-        ),
-        _react2.default.createElement(
-          'td',
-          null,
-          this.props.flat.area
-        ),
-        _react2.default.createElement(
-          'td',
-          null,
-          open
-        )
-      );
-    }
-  }]);
-
-  return CatRow1;
-}(_react2.default.Component);
-
-///////////////////// GALLERY ////////////////////////////////
-
-
-var Gallery = function (_React$Component12) {
-  _inherits(Gallery, _React$Component12);
-
-  function Gallery() {
-    _classCallCheck(this, Gallery);
-
-    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
-  }
-
-  _createClass(Gallery, [{
-    key: 'render',
-    value: function render() {
-
-      var data = [{
-        id: 1,
-        name: "Island",
-        image: "photos/house/img4.jpg"
-      }, {
-        id: 2,
-        name: "Forest",
-        image: "photos/inside.jpg"
-      }, {
-        id: 3,
-        name: "Whale",
-        image: "photos/house/img1.jpg"
-      }, {
-        id: 4,
-        name: "Mountain",
-        image: "photos/top-slide-01.jpg"
-      }, {
-        id: 5,
-        name: "Boat",
-        image: "photos/back2.jpg"
-      }, {
-        id: 6,
-        name: "Flowers",
-        image: "photos/back1.jpg"
-      }, {
-        id: 7,
-        name: "Fire",
-        image: "photos/house/img8.jpg"
-      }, {
-        id: 8,
-        name: "Garden",
-        image: "photos/house/img7.jpg"
-      }, {
-        id: 9,
-        name: "Bridge",
-        image: "photos/house/img5.jpg"
-      }];
-
-      // Create tile for each item in data array
-      // Pass data to each tile and assign a key
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'tiles' },
-          data.map(function (data) {
-            return _react2.default.createElement(Tile, { data: data, key: data.id });
-          })
-        )
-      );
-    }
-  }]);
-
-  return Gallery;
-}(_react2.default.Component);
-
-var Tile = function (_React$Component13) {
-  _inherits(Tile, _React$Component13);
-
-  function Tile(props) {
-    _classCallCheck(this, Tile);
-
-    var _this15 = _possibleConstructorReturn(this, (Tile.__proto__ || Object.getPrototypeOf(Tile)).call(this, props));
-
-    _this15.state = {
-      open: false,
-      mouseOver: false
-    };
-
-    _this15._clickHandler = _this15._clickHandler.bind(_this15);
-    _this15._mouseEnter = _this15._mouseEnter.bind(_this15);
-    _this15._mouseLeave = _this15._mouseLeave.bind(_this15);
-    return _this15;
-  }
-
-  _createClass(Tile, [{
-    key: '_mouseEnter',
-    value: function _mouseEnter(e) {
-      e.preventDefault();
-      if (this.state.mouseOver === false) {
-        console.log(this.props.data.name);
-        this.setState({
-          mouseOver: true
-        });
-      }
-    }
-  }, {
-    key: '_mouseLeave',
-    value: function _mouseLeave(e) {
-      e.preventDefault();
-      if (this.state.mouseOver === true) {
-        this.setState({
-          mouseOver: false
-        });
-      }
-    }
-  }, {
-    key: '_clickHandler',
-    value: function _clickHandler(e) {
-      e.preventDefault();
-      if (this.state.open === false) {
-        this.setState({
-          open: true
-        });
-      } else {
-        this.setState({
-          open: false
-        });
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-
-      var tileStyle = {};
-      var headerStyle = {};
-      var zoom = {};
-
-      if (this.state.open) {
-        tileStyle = {
-          width: '62vw',
-          height: '62vw',
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          margin: '0',
-          marginTop: '-31vw',
-          marginLeft: '-31vw',
-          boxShadow: '0 0 40px 5px black',
-          transform: 'none'
-        };
-      } else {
-        tileStyle = {
-          width: '25vw',
-          height: '25vw'
-        };
-      }
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'tile' },
-        _react2.default.createElement('img', {
-          onMouseEnter: this._mouseEnter,
-          onMouseLeave: this._mouseLeave,
-          onClick: this._clickHandler,
-          src: this.props.data.image,
-          alt: this.props.data.name,
-          style: tileStyle
-        })
-      );
-    }
-  }]);
-
-  return Tile;
-}(_react2.default.Component);
-
-var Storey = function (_React$Component14) {
-  _inherits(Storey, _React$Component14);
-
-  function Storey() {
-    _classCallCheck(this, Storey);
-
-    return _possibleConstructorReturn(this, (Storey.__proto__ || Object.getPrototypeOf(Storey)).apply(this, arguments));
-  }
-
-  _createClass(Storey, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement('div', { className: 'storey' });
-    }
-  }]);
-
-  return Storey;
-}(_react2.default.Component);
-
-///////////////////// CONTACT ////////////////////////////////
-
-
-var Contact = function (_React$Component15) {
-  _inherits(Contact, _React$Component15);
-
-  function Contact(props) {
-    _classCallCheck(this, Contact);
-
-    var _this17 = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
-
-    _this17.handleNameChange = function (event) {
-      _this17.setState({
-        name: event.target.value
-      });
-    };
-
-    _this17.handleMailChange = function (event) {
-      _this17.setState({
-        mail: event.target.value
-      });
-    };
-
-    _this17.handleTelChange = function (event) {
-      _this17.setState({
-        tel: event.target.value
-      });
-    };
-
-    _this17.handleMessageChange = function (event) {
-      _this17.setState({
-        message: event.target.value
-      });
-    };
-
-    _this17.handleSubmit = function (event) {
-      event.preventDefault();
-
-      if (_this17.state.name === "") {
-        _this17.setState({
-          messageToRender: "Please enter a valid name!",
-          infoColor: "red"
-        });
-        return;
-      } else if (_this17.state.mail.indexOf("@") < 0 || _this17.state.mail === "") {
-        _this17.setState({
-          messageToRender: "Please enter a valid email",
-          infoColor: "red"
-        });
-        return;
-      } else if (_this17.state.message === "") {
-        _this17.setState({
-          messageToRender: "Empty message!",
-          infoColor: "red"
-        });
-        return;
-      }
-      _this17.setState({
-        messageToRender: "Thank you for your message. We will contact you within 24 hours.",
-        infoColor: "green"
-      });
-      return;
-    };
-
-    _this17.state = {
-      name: '',
-      tel: '',
-      mail: '',
-      message: '',
-      messageToRender: '',
-      infoColor: 'green'
-    };
-    return _this17;
-  }
-
-  _createClass(Contact, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'frame' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-12 col-md-6 col-lg-6 item' },
-            _react2.default.createElement(
-              'h2',
-              null,
-              'PLEASE CONTACT US'
-            ),
-            _react2.default.createElement(
-              'h3',
-              null,
-              ' Sales office in the investment area.'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'ul: Mehoffera 32'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '03-131 Warsow'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Tel: +48 565 565 565'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'E-mail: sold@neo-block.eu'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'NIP: 525-001-16-22'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'REGON: 000489805'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-12 col-md-6 col-lg-6' },
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Leave your details will contact you.'
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement('input', { onChange: this.handleNameChange, value: this.state.name, className: 'item__form', placeholder: 'Name' }),
-              _react2.default.createElement('input', { onChange: this.handleTelChange, value: this.state.tel, className: 'item__form', placeholder: 'Tel' }),
-              _react2.default.createElement('input', { onChange: this.handleMailChange, type: 'email', className: 'item__form', placeholder: 'E-mail' }),
-              _react2.default.createElement('textarea', { onChange: this.handleMessageChange, value: this.state.message,
-                className: 'item__form', placeholder: 'Message' }),
-              _react2.default.createElement('input', { type: 'submit', onClick: this.handleSubmit, value: 'SEND', className: 'send' })
-            ),
-            _react2.default.createElement(
-              'p',
-              { style: { color: this.state.infoColor } },
-              this.state.messageToRender
-            )
-          )
-        ),
-        _react2.default.createElement(Footer, null)
-      );
-    }
-  }]);
-
-  return Contact;
-}(_react2.default.Component);
-
-/* ----- FOOTER ------ */
-
-
-var Footer = function (_React$Component16) {
-  _inherits(Footer, _React$Component16);
-
-  function Footer() {
-    _classCallCheck(this, Footer);
-
-    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-  }
-
-  _createClass(Footer, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement('div', { className: 'footer' });
-    }
-  }]);
-
-  return Footer;
+  return NotFound;
 }(_react2.default.Component);
 
 /* ------ RENDER ------ */
 
 
-var NavMainRouter = function (_React$Component17) {
-  _inherits(NavMainRouter, _React$Component17);
+var NavMainRouter = function (_React$Component5) {
+  _inherits(NavMainRouter, _React$Component5);
 
   function NavMainRouter() {
     _classCallCheck(this, NavMainRouter);
@@ -15554,11 +14786,11 @@ var NavMainRouter = function (_React$Component17) {
           _reactRouter.Route,
           { path: '/', component: SectionNav },
           _react2.default.createElement(_reactRouter.IndexRoute, { component: Invest }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/locations', component: Locations }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/offerFlats', component: OfferFlats }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/kolekcje', component: Gallery }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/storey', component: Storey }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: Contact }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/locations', component: _locations2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/offerFlats', component: _offerFlats2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/kolekcje', component: _gallery2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/storey', component: _storey2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
           _react2.default.createElement(_reactRouter.Route, { path: '*', component: NotFound })
         )
       );
@@ -15568,8 +14800,8 @@ var NavMainRouter = function (_React$Component17) {
   return NavMainRouter;
 }(_react2.default.Component);
 
-var Content = function (_React$Component18) {
-  _inherits(Content, _React$Component18);
+var Content = function (_React$Component6) {
+  _inherits(Content, _React$Component6);
 
   function Content() {
     _classCallCheck(this, Content);
@@ -15587,8 +14819,8 @@ var Content = function (_React$Component18) {
   return Content;
 }(_react2.default.Component);
 
-var App = function (_React$Component19) {
-  _inherits(App, _React$Component19);
+var App = function (_React$Component7) {
+  _inherits(App, _React$Component7);
 
   function App() {
     _classCallCheck(this, App);
@@ -32941,6 +32173,1190 @@ module.exports = function (str) {
 	});
 };
 
+
+/***/ }),
+/* 274 */,
+/* 275 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Locations = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _googleMapReact = __webpack_require__(123);
+
+var _googleMapReact2 = _interopRequireDefault(_googleMapReact);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var List = function (_React$Component) {
+  _inherits(List, _React$Component);
+
+  function List(props) {
+    _classCallCheck(this, List);
+
+    return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));
+  }
+
+  _createClass(List, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'ul',
+        { className: 'list__ul' },
+        this.props.lists.map(function (param, index) {
+          return _react2.default.createElement(
+            'li',
+            { className: 'list__li', key: index },
+            param.text
+          );
+        })
+      );
+    }
+  }]);
+
+  return List;
+}(_react2.default.Component);
+
+var AnyReactComponent = function (_React$Component2) {
+  _inherits(AnyReactComponent, _React$Component2);
+
+  function AnyReactComponent(props) {
+    _classCallCheck(this, AnyReactComponent);
+
+    var _this2 = _possibleConstructorReturn(this, (AnyReactComponent.__proto__ || Object.getPrototypeOf(AnyReactComponent)).call(this, props));
+
+    _this2.handleClick = function (e) {
+      _this2.props.clickFunction(e);
+    };
+
+    return _this2;
+  }
+
+  _createClass(AnyReactComponent, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement('img', { src: this.props.img_src, className: 'YOUR-CLASS-NAME', 'data-lat': this.props.lat, 'data-color': this.props.color,
+          onClick: this.handleClick }),
+        _react2.default.createElement('b', { style: { visibility: this.props.windows } })
+      );
+    }
+  }]);
+
+  return AnyReactComponent;
+}(_react2.default.Component);
+
+var Locations = exports.Locations = function (_React$Component3) {
+  _inherits(Locations, _React$Component3);
+
+  function Locations(props) {
+    _classCallCheck(this, Locations);
+
+    var _this3 = _possibleConstructorReturn(this, (Locations.__proto__ || Object.getPrototypeOf(Locations)).call(this, props));
+
+    _this3.handleClickWindows = function (e) {
+      var newMarkers = _this3.state.markers;
+      var listMarkers = _this3.state.markersList;
+
+      for (var i = 0; i < newMarkers.length; i++) {
+
+        if (newMarkers[i].lat === Number(e.target.getAttribute('data-lat'))) {
+          newMarkers[i].windows === 'hidden' ? newMarkers[i].windows = 'visible' : newMarkers[i].windows = 'hidden';
+        }
+      }
+      listMarkers = [];
+      for (var _i = 0; _i < newMarkers.length; _i++) {
+        if (e.target.getAttribute('data-color') === newMarkers[_i].color) {
+          listMarkers.push(newMarkers[_i]);
+        }
+      }
+
+      _this3.setState({
+        markers: newMarkers,
+        markersList: listMarkers
+      });
+    };
+
+    _this3.state = {
+      markers: [],
+      markersList: []
+    };
+    return _this3;
+  }
+
+  _createClass(Locations, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+
+      this.setState({
+        markers: [{ lat: 52.32181907768039, lng: 20.948610305786133, img_src: 'photos/Markers/yellow_MarkerA.png', text: 'A: Primary school nr.344', windows: 'hidden', color: 'yellow' }, { lat: 52.327675, lng: 20.944563099999982, img_src: 'photos/Markers/yellow_MarkerB.png', text: 'B: Kindergarten nr.226', windows: 'hidden', color: 'yellow' }, { lat: 52.328188, lng: 20.945760000000064, img_src: 'photos/Markers/yellow_MarkerC.png', text: 'C: Nursery nr.36', windows: 'hidden', color: 'yellow' }, { lat: 52.3209503, lng: 20.94310500000006, img_src: 'photos/Markers/yellow_MarkerD.png', text: 'D: Batern country', windows: 'hidden', color: 'yellow' }, { lat: 52.3298739, lng: 20.950973999999974, img_src: 'photos/Markers/yellow_MarkerE.png', text: 'E: Fairy land', windows: 'hidden', color: 'yellow' }, { lat: 52.326454, lng: 20.950946899999963, img_src: 'photos/Markers/blue_MarkerA.png', text: 'A: Żabka', windows: 'hidden', color: 'blue' }, { lat: 52.325912, lng: 20.94531489999997, img_src: 'photos/Markers/blue_MarkerB.png', text: 'B: M&L Delikatesy', windows: 'hidden', color: 'blue' }, { lat: 52.3222018, lng: 20.95015539999997, img_src: 'photos/Markers/blue_MarkerC.png', text: 'C: DH Tarchomin', windows: 'hidden', color: 'blue' }, { lat: 52.32268939999999, lng: 20.94270670000003, img_src: 'photos/Markers/blue_MarkerD.png', text: 'D: Żabka', windows: 'hidden', color: 'blue' }, { lat: 52.327899, lng: 20.943962499999998, img_src: 'photos/Markers/blue_MarkerE.png', text: 'E: Sklep ABC', windows: 'hidden', color: 'blue' }, { lat: 52.3262, lng: 20.94945000000007, img_src: 'photos/Markers/pink_MarkerA.png', text: 'A: Talarowa 01', windows: 'hidden', color: 'pink' }, { lat: 52.32417, lng: 20.946270000000027, img_src: 'photos/Markers/pink_MarkerB.png', text: 'B: Erazma z Zakroczymia 01', windows: 'hidden', color: 'pink' }, { lat: 52.32489, lng: 20.94759010000007, img_src: 'photos/Markers/pink_MarkerC.png', text: 'C: Erazma z Zakroczymia 02', windows: 'hidden', color: 'pink' }, { lat: 52.32283, lng: 20.944790000000012, img_src: 'photos/Markers/pink_MarkerD.png', text: 'D: Mehoffera 04', windows: 'hidden', color: 'pink' }, { lat: 52.32281256416483, lng: 20.94393253326416, img_src: 'photos/Markers/pink_MarkerE.png', text: 'E: Mehoffera 05', windows: 'hidden', color: 'pink' }, { lat: 52.3251735, lng: 20.945689600000037, img_src: 'photos/Markers/red_MarkerA.png', text: 'A: Medicover', windows: 'hidden', color: 'red' }, { lat: 52.321751, lng: 20.948411899999996, img_src: 'photos/Markers/red_MarkerB.png', text: 'B: dr n. med. Dorota Kapiszewska-Dzedzej', windows: 'hidden', color: 'red' }, { lat: 52.3269005, lng: 20.942221000000018, img_src: 'photos/Markers/red_MarkerC.png', text: 'C: lek. med. Trojanowski Piotr', windows: 'hidden', color: 'red' }, { lat: 52.3283427, lng: 20.949323999999933, img_src: 'photos/Markers/red_MarkerD.png', text: 'D: Dentica Stomatologia Rodzinna Dorota Giza-Padzińska', windows: 'hidden', color: 'red' }, { lat: 52.319041, lng: 20.957176900000036, img_src: 'photos/Markers/red_MarkerE.png', text: 'E: LUX MED', windows: 'hidden', color: 'red' }, { lat: 52.3253636, lng: 20.949414700000034, img_src: 'photos/family_files/marker-cat-7.png', text: 'It is here', windows: 'hidden', color: 'brown' }]
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this4 = this;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'showMap' },
+        _react2.default.createElement(
+          'h2',
+          null,
+          'LOCALIZATION'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Near the investment of Neo Block there are schools and kindergartens, health centers and service and retail outlets. There are network stores and numerous local shops waiting for you. There are also a bank, post office, restaurant, sushi bar and pizzeria. The beautiful parks are popular for walks.'
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: { position: 'relative' } },
+          _react2.default.createElement(
+            _googleMapReact2.default,
+            {
+              bootstrapURLKeys: { key: "AIzaSyANC6u2qaMm1coCYI1KtOmlJzwV2C8lyA8" },
+              defaultCenter: this.props.center,
+              defaultZoom: this.props.zoom,
+              style: { height: '500px' }
+            },
+            this.state.markers.map(function (marker, i) {
+              return _react2.default.createElement(AnyReactComponent, {
+                lat: marker.lat,
+                lng: marker.lng,
+                img_src: marker.img_src,
+                text: marker.text,
+                windows: marker.windows,
+                clickFunction: _this4.handleClickWindows,
+                key: marker.lat,
+                color: marker.color
+              });
+            }),
+            _react2.default.createElement(List, { lists: this.state.markersList })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Locations;
+}(_react2.default.Component);
+
+Locations.defaultProps = {
+  center: { lat: 52.3253636, lng: 20.95241470000002 },
+  zoom: 15
+
+};
+
+exports.default = Locations;
+
+/***/ }),
+/* 276 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.OfferFlats = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var OfferFlats = exports.OfferFlats = function (_React$Component) {
+  _inherits(OfferFlats, _React$Component);
+
+  function OfferFlats(props) {
+    _classCallCheck(this, OfferFlats);
+
+    var _this = _possibleConstructorReturn(this, (OfferFlats.__proto__ || Object.getPrototypeOf(OfferFlats)).call(this, props));
+
+    _this.changeBox = function () {
+      _this.setState({
+        available: _this.state.available ? false : true
+      });
+    };
+
+    _this.changeFilterFloor = function (text) {
+      _this.setState({
+        filterFloor: text
+      });
+    };
+
+    _this.changeFilterRoom = function (room) {
+      _this.setState({
+        filterRoom: room
+      });
+    };
+
+    _this.changeFilterArea = function (area) {
+      _this.setState({
+        filterArea: area
+      });
+    };
+
+    _this.state = {
+      filterFloor: '',
+      available: false,
+      filterRoom: '',
+      filterArea: '0'
+    };
+    return _this;
+  }
+
+  _createClass(OfferFlats, [{
+    key: 'render',
+    value: function render() {
+      var flats = [{ floor: "4", room: "3", area: "43", available: false }, { floor: "2", room: "2", area: "56", available: true }, { floor: "2", room: "4", area: "32", available: true }, { floor: "1", room: "2", area: "45", available: true }, { floor: "2", room: "1", area: "68", available: false }, { floor: "3", room: "2", area: "36", available: true }, { floor: "1", room: "3", area: "33.7", available: true }, { floor: "2", room: "5", area: "44.5", available: true }, { floor: "3", room: "1", area: "62", available: false }, { floor: "1", room: "3", area: "35", available: false }, { floor: "2", room: "5", area: "44.6", available: true }, { floor: "3", room: "1", area: "63", available: false }, { floor: "1", room: "3", area: "34", available: false }, { floor: "4", room: "3", area: "43.2", available: false }, { floor: "2", room: "2", area: "56.2", available: true }, { floor: "2", room: "4", area: "33", available: true }, { floor: "1", room: "2", area: "45.4", available: true }, { floor: "2", room: "1", area: "68.7", available: false }, { floor: "3", room: "3", area: "36.8", available: true }, { floor: "1", room: "3", area: "33.2", available: true }, { floor: "2", room: "5", area: "44.9", available: true }, { floor: "3", room: "2", area: "62.6", available: false }, { floor: "1", room: "3", area: "35.1", available: false }, { floor: "2", room: "5", area: "44.3", available: true }, { floor: "3", room: "2", area: "63.5", available: false }, { floor: "1", room: "3", area: "34.7", available: false }];
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(SearchBar1, { filterF: this.state.filterFloor, filterR: this.state.filterRoom,
+          filterA: this.state.filterArea, available: this.state.available,
+          changeBox: this.changeBox,
+          filterFloor: this.changeFilterFloor, filterRoom: this.changeFilterRoom,
+          filterArea: this.changeFilterArea }),
+        _react2.default.createElement(CatTable1, { flats: flats, filterF: this.state.filterFloor, filterR: this.state.filterRoom,
+          filterA: this.state.filterArea, filterAv: this.state.available })
+      );
+    }
+  }]);
+
+  return OfferFlats;
+}(_react2.default.Component);
+
+var SearchBar1 = function (_React$Component2) {
+  _inherits(SearchBar1, _React$Component2);
+
+  function SearchBar1() {
+    var _ref;
+
+    var _temp, _this2, _ret;
+
+    _classCallCheck(this, SearchBar1);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this2 = _possibleConstructorReturn(this, (_ref = SearchBar1.__proto__ || Object.getPrototypeOf(SearchBar1)).call.apply(_ref, [this].concat(args))), _this2), _this2.handlerCheckBox = function () {
+      // rozwiązanie problemu event.target.checked
+      if (typeof _this2.props.changeBox === 'function') {
+        _this2.props.changeBox();
+      }
+    }, _this2.handlerSearchFloor = function (event) {
+      if (typeof _this2.props.filterFloor === 'function') {
+        _this2.props.filterFloor(event.target.value);
+      }
+    }, _this2.handlerSearchRoom = function (event) {
+      if (typeof _this2.props.filterRoom === 'function') {
+        _this2.props.filterRoom(event.target.value);
+      }
+    }, _this2.handlerSearchArea = function (event) {
+      if (typeof _this2.props.filterArea === 'function') {
+        _this2.props.filterArea(event.target.value);
+      }
+    }, _temp), _possibleConstructorReturn(_this2, _ret);
+  }
+
+  _createClass(SearchBar1, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'perfectFlat' },
+        _react2.default.createElement(
+          'h2',
+          { className: 'flats__tr' },
+          _react2.default.createElement(
+            'b',
+            null,
+            'FIND THE PERFECT FLAT'
+          )
+        ),
+        _react2.default.createElement(
+          'form',
+          { className: 'flats__search' },
+          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4 ', type: 'text', placeholder: 'Floor', onChange: this.handlerSearchFloor }),
+          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4', type: 'text', placeholder: 'Rooms', onChange: this.handlerSearchRoom }),
+          _react2.default.createElement('input', { className: 'col-sm-6 col-md-4 col-lg-4', type: 'text', placeholder: 'Minimum area', onChange: this.handlerSearchArea }),
+          _react2.default.createElement(
+            'label',
+            { className: 'col-sm-6 col-md-12 col-lg-12' },
+            _react2.default.createElement('input', { type: 'checkbox', checked: this.props.available, onChange: this.handlerCheckBox }),
+            'Available'
+          )
+        )
+      );
+    }
+  }]);
+
+  return SearchBar1;
+}(_react2.default.Component);
+
+var CatTable1 = function (_React$Component3) {
+  _inherits(CatTable1, _React$Component3);
+
+  function CatTable1() {
+    _classCallCheck(this, CatTable1);
+
+    return _possibleConstructorReturn(this, (CatTable1.__proto__ || Object.getPrototypeOf(CatTable1)).apply(this, arguments));
+  }
+
+  _createClass(CatTable1, [{
+    key: 'render',
+    value: function render() {
+
+      var rows = [];
+      var lastCategory = null;
+      var filtersF = this.props.filterF;
+      var filtersR = this.props.filterR;
+      var filtersA = parseInt(this.props.filterA);
+      var checkBox = this.props.filterAv;
+
+      this.props.flats.forEach(function (flat) {
+
+        var flatArea = parseInt(flat.area);
+
+        if (flat.floor.includes(filtersF) && flat.room.includes(filtersR) && flatArea > filtersA && (flat.available === true || checkBox === false)) {
+          rows.push(_react2.default.createElement(CatRow1, { flat: flat, key: flat.area }));
+        }
+        lastCategory = flat.floor;
+      });
+
+      return _react2.default.createElement(
+        'table',
+        { className: 'flats' },
+        _react2.default.createElement(
+          'thead',
+          null,
+          _react2.default.createElement(
+            'tr',
+            { className: 'flats__tr' },
+            _react2.default.createElement(
+              'th',
+              null,
+              ' FLOOR '
+            ),
+            _react2.default.createElement(
+              'th',
+              null,
+              ' ROOMS '
+            ),
+            _react2.default.createElement(
+              'th',
+              null,
+              ' AREA '
+            ),
+            _react2.default.createElement(
+              'th',
+              null,
+              ' AVAILABLE '
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'tbody',
+          null,
+          rows
+        )
+      );
+    }
+  }]);
+
+  return CatTable1;
+}(_react2.default.Component);
+
+var CatRow1 = function (_React$Component4) {
+  _inherits(CatRow1, _React$Component4);
+
+  function CatRow1() {
+    _classCallCheck(this, CatRow1);
+
+    return _possibleConstructorReturn(this, (CatRow1.__proto__ || Object.getPrototypeOf(CatRow1)).apply(this, arguments));
+  }
+
+  _createClass(CatRow1, [{
+    key: 'render',
+    value: function render() {
+
+      var open = this.props.flat.available ? "available " : "not available";
+
+      return _react2.default.createElement(
+        'tr',
+        { className: 'searchFlat' },
+        _react2.default.createElement(
+          'td',
+          null,
+          this.props.flat.floor
+        ),
+        _react2.default.createElement(
+          'td',
+          null,
+          this.props.flat.room
+        ),
+        _react2.default.createElement(
+          'td',
+          null,
+          this.props.flat.area
+        ),
+        _react2.default.createElement(
+          'td',
+          null,
+          open
+        )
+      );
+    }
+  }]);
+
+  return CatRow1;
+}(_react2.default.Component);
+
+exports.default = OfferFlats;
+
+/***/ }),
+/* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Gallery = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = exports.Gallery = function (_React$Component) {
+  _inherits(Gallery, _React$Component);
+
+  function Gallery() {
+    _classCallCheck(this, Gallery);
+
+    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
+  }
+
+  _createClass(Gallery, [{
+    key: "render",
+    value: function render() {
+
+      var data = [{
+        id: 1,
+        name: "Island",
+        image: "photos/house/img4.jpg"
+      }, {
+        id: 2,
+        name: "Forest",
+        image: "photos/inside.jpg"
+      }, {
+        id: 3,
+        name: "Whale",
+        image: "photos/house/img1.jpg"
+      }, {
+        id: 4,
+        name: "Mountain",
+        image: "photos/top-slide-01.jpg"
+      }, {
+        id: 5,
+        name: "Boat",
+        image: "photos/back2.jpg"
+      }, {
+        id: 6,
+        name: "Flowers",
+        image: "photos/back1.jpg"
+      }, {
+        id: 7,
+        name: "Fire",
+        image: "photos/house/img8.jpg"
+      }, {
+        id: 8,
+        name: "Garden",
+        image: "photos/house/img7.jpg"
+      }, {
+        id: 9,
+        name: "Bridge",
+        image: "photos/house/img5.jpg"
+      }];
+
+      // Create tile for each item in data array
+      // Pass data to each tile and assign a key
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "tiles" },
+          data.map(function (data) {
+            return _react2.default.createElement(Tile, { data: data, key: data.id });
+          })
+        )
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react2.default.Component);
+
+var Tile = function (_React$Component2) {
+  _inherits(Tile, _React$Component2);
+
+  function Tile(props) {
+    _classCallCheck(this, Tile);
+
+    var _this2 = _possibleConstructorReturn(this, (Tile.__proto__ || Object.getPrototypeOf(Tile)).call(this, props));
+
+    _this2.state = {
+      open: false,
+      mouseOver: false
+    };
+
+    _this2._clickHandler = _this2._clickHandler.bind(_this2);
+    _this2._mouseEnter = _this2._mouseEnter.bind(_this2);
+    _this2._mouseLeave = _this2._mouseLeave.bind(_this2);
+    return _this2;
+  }
+
+  _createClass(Tile, [{
+    key: "_mouseEnter",
+    value: function _mouseEnter(e) {
+      e.preventDefault();
+      if (this.state.mouseOver === false) {
+        this.setState({
+          mouseOver: true
+        });
+      }
+    }
+  }, {
+    key: "_mouseLeave",
+    value: function _mouseLeave(e) {
+      e.preventDefault();
+      if (this.state.mouseOver === true) {
+        this.setState({
+          mouseOver: false
+        });
+      }
+    }
+  }, {
+    key: "_clickHandler",
+    value: function _clickHandler(e) {
+      e.preventDefault();
+      if (this.state.open === false) {
+        this.setState({
+          open: true
+        });
+      } else {
+        this.setState({
+          open: false
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+
+      var tileStyle = {};
+      var headerStyle = {};
+      var zoom = {};
+
+      if (this.state.open) {
+        tileStyle = {
+          width: '62vw',
+          height: '62vw',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          margin: '0',
+          marginTop: '-31vw',
+          marginLeft: '-31vw',
+          boxShadow: '0 0 40px 5px black',
+          transform: 'none'
+        };
+      } else {
+        tileStyle = {
+          width: '25vw',
+          height: '25vw'
+        };
+      }
+
+      return _react2.default.createElement(
+        "div",
+        { className: "tile" },
+        _react2.default.createElement("img", {
+          onMouseEnter: this._mouseEnter,
+          onMouseLeave: this._mouseLeave,
+          onClick: this._clickHandler,
+          src: this.props.data.image,
+          alt: this.props.data.name,
+          style: tileStyle
+        })
+      );
+    }
+  }]);
+
+  return Tile;
+}(_react2.default.Component);
+
+exports.default = Gallery;
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Contact = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = exports.Contact = function (_React$Component) {
+    _inherits(Contact, _React$Component);
+
+    function Contact(props) {
+        _classCallCheck(this, Contact);
+
+        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+
+        _this.handleNameChange = function (event) {
+            _this.setState({
+                name: event.target.value
+            });
+        };
+
+        _this.handleMailChange = function (event) {
+            _this.setState({
+                mail: event.target.value
+            });
+        };
+
+        _this.handleTelChange = function (event) {
+            _this.setState({
+                tel: event.target.value
+            });
+        };
+
+        _this.handleMessageChange = function (event) {
+            _this.setState({
+                message: event.target.value
+            });
+        };
+
+        _this.handleSubmit = function (event) {
+            event.preventDefault();
+
+            if (_this.state.name === "") {
+                _this.setState({
+                    messageToRender: "Please enter a valid name!",
+                    infoColor: "red"
+                });
+                return;
+            } else if (_this.state.mail.indexOf("@") < 0 || _this.state.mail === "") {
+                _this.setState({
+                    messageToRender: "Please enter a valid email",
+                    infoColor: "red"
+                });
+                return;
+            } else if (_this.state.message === "") {
+                _this.setState({
+                    messageToRender: "Empty message!",
+                    infoColor: "red"
+                });
+                return;
+            }
+            _this.setState({
+                messageToRender: "Thank you for your message. We will contact you within 24 hours.",
+                infoColor: "green"
+            });
+            return;
+        };
+
+        _this.state = {
+            name: '',
+            tel: '',
+            mail: '',
+            message: '',
+            messageToRender: '',
+            infoColor: 'green'
+        };
+        return _this;
+    }
+
+    _createClass(Contact, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'frame' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-sm-12 col-md-6 col-lg-6 item' },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'PLEASE CONTACT US'
+                        ),
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            ' Sales office in the investment area.'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'ul: Mehoffera 32'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            '03-131 Warsow'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Tel: +48 565 565 565'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'E-mail: sold@neo-block.eu'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'NIP: 525-001-16-22'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'REGON: 000489805'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-sm-12 col-md-6 col-lg-6 contactWithUs' },
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Leave your details will contact you.'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            { style: { color: this.state.infoColor } },
+                            this.state.messageToRender
+                        ),
+                        _react2.default.createElement(
+                            'form',
+                            null,
+                            _react2.default.createElement('input', { onChange: this.handleNameChange, value: this.state.name, className: 'item__form', placeholder: 'Name' }),
+                            _react2.default.createElement('input', { onChange: this.handleTelChange, value: this.state.tel, className: 'item__form', placeholder: 'Tel' }),
+                            _react2.default.createElement('input', { onChange: this.handleMailChange, type: 'email', className: 'item__form', placeholder: 'E-mail' }),
+                            _react2.default.createElement('textarea', { onChange: this.handleMessageChange, value: this.state.message,
+                                className: 'item__form', placeholder: 'Message' }),
+                            _react2.default.createElement('input', { type: 'submit', onClick: this.handleSubmit, value: 'SEND', className: 'send' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Storey = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Storey = exports.Storey = function (_React$Component) {
+    _inherits(Storey, _React$Component);
+
+    function Storey(props) {
+        _classCallCheck(this, Storey);
+
+        var _this = _possibleConstructorReturn(this, (Storey.__proto__ || Object.getPrototypeOf(Storey)).call(this, props));
+
+        _this.handleColorChange = function () {
+
+            _this.setState({
+                colorFloor: 'green'
+            });
+        };
+
+        _this.state = {
+            colorFloor: ''
+        };
+        return _this;
+    }
+
+    _createClass(Storey, [{
+        key: 'render',
+        value: function render() {
+            console.log(this.state.colorFloor);
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h2',
+                    { className: 'flats__tr' },
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'SEARCH AFTER THE STOREY'
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'image' })
+            );
+        }
+    }]);
+
+    return Storey;
+}(_react2.default.Component);
+
+exports.default = Storey;
+// <img src="photos/top_942-600.jpg" className="photo__storey" alt="Planets" useMap="#planetmap"
+//   style={{width:"798", height:"508"}}/>
+// <map name="planetmap" id="planetmap">
+//     <area shape="poly"  onMouseEnter={this.handleColorChange} style={{backgroundColor:'red', height: '30px'}} title="floor 3" href="photos/PIETRO_3.jpg"  coords="459,122,792,313,792,340,462,202,0,299,1,249" target="_self"     />
+//     <area shape="poly"  title="floor 2" href="photos/PIETRO_2.jpg"  coords="461,203,791,339,793,369,465,281,3,342,0,298" target="_self"     />
+//     <area shape="poly"  title="floor 1" href="photos/PIETRO_1.jpg"  coords="460,281,789,370,788,401,458,360,2,387,12,342" target="_self"     />
+//     <area shape="poly"  title="floor 0" href="photos/PARTER.jpg"  coords="463,361,787,406,786,441,459,478,3,448,5,383"  target="_self"     />
+// </map>
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Footer = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _instagram = __webpack_require__(283);
+
+var _instagram2 = _interopRequireDefault(_instagram);
+
+var _facebookOfficial = __webpack_require__(282);
+
+var _facebookOfficial2 = _interopRequireDefault(_facebookOfficial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = exports.Footer = function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'row relative footer' },
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'div',
+            { className: 'iconBox' },
+            _react2.default.createElement(IconsFooter, null)
+          )
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react2.default.Component);
+
+var IconsFooter = function (_React$Component2) {
+  _inherits(IconsFooter, _React$Component2);
+
+  function IconsFooter() {
+    _classCallCheck(this, IconsFooter);
+
+    return _possibleConstructorReturn(this, (IconsFooter.__proto__ || Object.getPrototypeOf(IconsFooter)).apply(this, arguments));
+  }
+
+  _createClass(IconsFooter, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'a',
+          { href: 'https://www.facebook.com', target: '_blank', className: 'iconSocial' },
+          _react2.default.createElement(_facebookOfficial2.default, null)
+        ),
+        _react2.default.createElement(
+          'a',
+          { href: 'https://www.instagram.com', target: '_blank', className: 'iconSocial' },
+          _react2.default.createElement(_instagram2.default, null)
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'textFooter' },
+          'Created by Daria Ambroziak-Napora 2017   \xA9 Site code protected by law :-) '
+        )
+      );
+    }
+  }]);
+
+  return IconsFooter;
+}(_react2.default.Component);
+
+exports.default = Footer;
+
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(11);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var IconBase = function IconBase(_ref, _ref2) {
+  var children = _ref.children;
+  var color = _ref.color;
+  var size = _ref.size;
+  var style = _ref.style;
+  var width = _ref.width;
+  var height = _ref.height;
+
+  var props = _objectWithoutProperties(_ref, ['children', 'color', 'size', 'style', 'width', 'height']);
+
+  var _ref2$reactIconBase = _ref2.reactIconBase;
+  var reactIconBase = _ref2$reactIconBase === undefined ? {} : _ref2$reactIconBase;
+
+  var computedSize = size || reactIconBase.size || '1em';
+  return _react2.default.createElement('svg', _extends({
+    children: children,
+    fill: 'currentColor',
+    preserveAspectRatio: 'xMidYMid meet',
+    height: height || computedSize,
+    width: width || computedSize
+  }, reactIconBase, props, {
+    style: _extends({
+      verticalAlign: 'middle',
+      color: color || reactIconBase.color
+    }, reactIconBase.style || {}, style)
+  }));
+};
+
+IconBase.propTypes = {
+  color: _propTypes2.default.string,
+  size: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  width: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  height: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  style: _propTypes2.default.object
+};
+
+IconBase.contextTypes = {
+  reactIconBase: _propTypes2.default.shape(IconBase.propTypes)
+};
+
+exports.default = IconBase;
+module.exports = exports['default'];
+
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactIconBase = __webpack_require__(281);
+
+var _reactIconBase2 = _interopRequireDefault(_reactIconBase);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FaFacebookOfficial = function FaFacebookOfficial(props) {
+    return _react2.default.createElement(
+        _reactIconBase2.default,
+        _extends({ viewBox: '0 0 40 40' }, props),
+        _react2.default.createElement(
+            'g',
+            null,
+            _react2.default.createElement('path', { d: 'm35.4 2.9q0.8 0 1.3 0.5t0.6 1.4v30.4q0 0.8-0.6 1.4t-1.3 0.5h-8.7v-13.2h4.4l0.7-5.2h-5.1v-3.3q0-1.3 0.5-1.9t2-0.6l2.7 0v-4.7q-1.4-0.2-3.9-0.2-3.1 0-4.9 1.8t-1.8 5.1v3.8h-4.5v5.2h4.5v13.2h-16.4q-0.8 0-1.3-0.5t-0.6-1.4v-30.4q0-0.8 0.6-1.4t1.3-0.5h30.5z' })
+        )
+    );
+};
+
+exports.default = FaFacebookOfficial;
+module.exports = exports['default'];
+
+/***/ }),
+/* 283 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactIconBase = __webpack_require__(281);
+
+var _reactIconBase2 = _interopRequireDefault(_reactIconBase);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FaInstagram = function FaInstagram(props) {
+    return _react2.default.createElement(
+        _reactIconBase2.default,
+        _extends({ viewBox: '0 0 40 40' }, props),
+        _react2.default.createElement(
+            'g',
+            null,
+            _react2.default.createElement('path', { d: 'm33.4 31.8v-14.4h-3q0.4 1.4 0.4 2.9 0 2.8-1.4 5.2t-3.9 3.7-5.3 1.4q-4.4 0-7.6-3t-3.1-7.3q0-1.5 0.5-2.9h-3.2v14.4q0 0.6 0.4 1t1 0.4h23.8q0.6 0 1-0.4t0.4-1z m-6.3-11.9q0-2.7-2.1-4.7t-4.8-1.9q-2.9 0-4.9 1.9t-2 4.7 2 4.8 4.9 1.9q2.8 0 4.8-1.9t2.1-4.8z m6.3-8v-3.7q0-0.6-0.4-1.1t-1.1-0.4h-3.9q-0.7 0-1.1 0.4t-0.5 1.1v3.7q0 0.6 0.5 1.1t1.1 0.4h3.9q0.6 0 1.1-0.4t0.4-1.1z m3.9-4.6v25.4q0 1.9-1.3 3.1t-3.1 1.3h-25.5q-1.8 0-3.1-1.3t-1.3-3.1v-25.4q0-1.9 1.3-3.1t3.1-1.3h25.5q1.8 0 3.1 1.3t1.3 3.1z' })
+        )
+    );
+};
+
+exports.default = FaInstagram;
+module.exports = exports['default'];
 
 /***/ })
 /******/ ]);

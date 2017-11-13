@@ -1,9 +1,58 @@
-.frame{
-  background-color: white;
+@import 'media_queries';
 
+@media (max-width: #{$tablet-width}) {
+
+.item, .contactWithUs{
+  width: 94%;
+  margin: 3%;
+}
+
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+
+  .item, .contactWithUs{
+    width: 46%;
+    margin: 2%;
+  }
+  .contactWithUs{
+    margin-top: 7%;
+  }
+
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+
+  .item, .contactWithUs{
+    width: 46%;
+    margin: 2%;
+  }
+  .contactWithUs{
+    margin-top: 7%;
+  }
+
+}
+
+
+
+.frame{
+  background-color: inherit;
   h2{
       font-family: 'Oswald', sans-serif;
-      color:white;
+      color: #ff0066;
+      text-align: center;
+  }
+  h3,p{
+    text-align: center;
+  }
+}
+
+.item, .contactWithUs{
+  background-color:white;
+
+  h3{
+    font-family: 'Oswald', sans-serif;
+    color: black;
   }
 }
 
@@ -16,45 +65,25 @@
   background-color: #d6d6c2;
 }
 
+.item__form:focus{
+  outline: none;
+  background-color: #d6d6c2;
+}
+
 
 .send{
-  width: 100%;
+  width: 50%;
   padding: 2%;
-  background-color: rgb(185, 21, 129);
+  background-color: #ff0066;
+  border: 3px solid #ff0066;
   color: grey;
-  box-shadow: 10px 6px 16px -4px rgba(0,0,0,0.75);
   border-radius: 10px 10px 10px 10px;
   cursor: pointer;
+  float: right;
+  margin: 10px;
 }
 
 .send:hover{
   opacity: 0.7;
-}
-
-/// FOOTER ///
-.iconBox {
-  padding: 1%;
-  text-align: center;
-  position: relative;
-
-}
-.iconSocial {
-  font-size: 30px;
-  color:  #575757;
-  padding-right: 2px;
-  padding-left: 2px;
-  float:left;
-  text-align: center;
-}
-.iconSocial:hover {
-  color: #626262;
-}
-.textFooter {
-  float: right;
-  line-height: 10px;
-  font-size: 11px;
-	text-transform: uppercase;
-  text-align: right;
-	color: black;
-  padding: 1%;
+  outline: none;
 }

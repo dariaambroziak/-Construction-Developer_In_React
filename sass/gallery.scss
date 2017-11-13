@@ -1,3 +1,26 @@
+@import 'media_queries';
+
+@media (max-width: #{$tablet-width}) {
+
+  .tile {
+  	width: 20vw;
+  }
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+
+  .tile {
+  	width: 25vw;
+  }
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+
+  .tile {
+  	width: 25vw;
+  }
+}
+
 .gallery{
   width: 100%;
   background:grey;
@@ -17,7 +40,6 @@
 	margin: 10px;
 	cursor: pointer;
 	overflow: hidden;
-	width: 20vw;
 	img {
 		// width: 100%;
 		transition: transform 500ms ease;
