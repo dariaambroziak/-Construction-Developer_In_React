@@ -2,7 +2,7 @@
 
 TECHNOLOGIES: HTML5, CSS, SASS, REACT, RWD, API, GULP, WEBPACK
 
-<a href="https://dariaambroziak.github.io/REACT-WebsiteConstructionDeveloper/">Simple scroll menu</a>
+<a href="https://dariaambroziak.github.io/REACT-WebsiteConstructionDeveloper/">DEMO</a>
 
 Installation:
 
