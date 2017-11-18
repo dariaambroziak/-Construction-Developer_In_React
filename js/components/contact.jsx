@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 export class Contact extends React.Component {
     constructor(props) {
         super(props)
@@ -86,16 +83,20 @@ export class Contact extends React.Component {
                  <p>REGON: 000489805</p>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-6 contactWithUs">
+                <br/>
+                <br/>
+                <br/>
                 <h3>Leave your details will contact you.</h3>
-                <p style={ {color: this.state.infoColor} }>{this.state.messageToRender}</p>
+                <br/>            
                   <form >
                       <input onChange={this.handleNameChange} value={this.state.name} className="item__form" placeholder="Name"/>
                       <input onChange={this.handleTelChange} value={this.state.tel} className="item__form" placeholder="Tel"/>
                       <input onChange={this.handleMailChange} type="email" className="item__form" placeholder="E-mail"/>
                       <textarea onChange={this.handleMessageChange} value={this.state.message}
-                                className="item__form" placeholder="Message"></textarea>
+                                className="item__form" placeholder="Message">ggg</textarea>
                       <input type="submit" onClick={this.handleSubmit} value="SEND" className="send"/>
                   </form>
+                <p style={ {color: this.state.infoColor} }>{this.state.messageToRender}</p>
               </div>
             </div>
           </div>

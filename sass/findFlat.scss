@@ -1,3 +1,40 @@
+@import 'media_queries';
+
+@media (max-width: #{$tablet-width}) {
+
+  .perfectFlat{
+    width: 100%;
+  }
+  .flats {
+    width: 100%;
+  }
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+
+  .perfectFlat{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .flats {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+
+  .perfectFlat{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .flats {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
 .perfectFlat{
   font-family: 'Oswald', sans-serif;
   text-align: center;
@@ -15,28 +52,26 @@
 	background-color:inherit;
 	text-align:center;
 	white-space:nowrap;
-
   input{
     outline:none;
     padding: 3px;
   }
 }
 
+
 .flats {
-  width: 100%;
   background-image: url('../photos/baby.jpeg');
   background-position: center;
   background-size: cover;
+  :nth-child(2n){
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .flats__tr {
   color: #ff0066;
+  text-align: center;
   background-color: inherit;
   padding: 10px 0px;
-}
-
-.searchFlat{
-  td{
-    text-align: center;
-  }
 }

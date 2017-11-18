@@ -72,7 +72,7 @@ export class Locations extends React.Component {
                 {lat: 52.3283427, lng: 20.949323999999933, img_src: 'photos/Markers/red_MarkerD.png', text: 'D: Dentica Stomatologia Rodzinna Dorota Giza-Padzińska', windows : 'hidden', color: 'red'},
                 {lat: 52.319041, lng: 20.957176900000036, img_src: 'photos/Markers/red_MarkerE.png', text: 'E: LUX MED', windows : 'hidden', color: 'red'},
 
-                {lat: 52.3253636, lng: 20.949414700000034,  img_src: 'photos/family_files/marker-cat-7.png', text: 'It is here', windows: 'hidden', color: 'brown'}],
+                {lat: 52.3253636, lng: 20.949414700000034,  img_src: 'photos/family_files/marker-cat-7.png', text: 'NEO BLOCK', windows: 'hidden', color: 'brown'}],
     });
   }
 
@@ -102,7 +102,7 @@ export class Locations extends React.Component {
   render() {
     return (<div className="showMap">
       <h2>LOCALIZATION</h2>
-      <p>Near the investment of Neo Block there are schools and kindergartens,
+      <p>Near the investment of <strong>Neo Block</strong> there are schools and kindergartens,
       health centers and service and retail outlets. There are network stores and
       numerous local shops waiting for you. There are also a bank, post office,
       restaurant, sushi bar and pizzeria. The beautiful parks are popular for walks.</p>

@@ -1,0 +1,110 @@
+@import 'media_queries';
+
+@media (max-width: #{$tablet-width}) {
+  .financeByCredit{
+    width: 100%;
+  }
+  .finaMax{
+    h5{
+      font-size: 14px;
+      font-family: 'Oswald', sans-serif;
+      strong{
+        color: #ff0066;
+      }
+    }
+  }
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+  .financeByCredit{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .creditLi{
+    height: 220px;
+  }
+  .finaMax{
+    h5{
+      font-size: 16px;
+      font-family: 'Oswald', sans-serif;
+      strong{
+        color: #ff0066;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+  .financeByCredit{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .creditLi{
+    height: 260px;
+  }
+  .finaMax{
+    h5{
+      font-size: 20px;
+      font-family: 'Oswald', sans-serif;
+      strong{
+        color: #ff0066;
+      }
+    }
+  }
+}
+
+
+.offerFinancing{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #ff0066;
+  background-color: inherit;
+  padding: 10px 0px;
+}
+
+.credit{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 16px 0 20px;
+  border-top: solid 1px #41424c;
+  border-bottom: solid 1px #41424c;
+  p strong{
+    color: #03a3a3;
+  }
+}
+
+.creditList{
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  ul {
+    margin: 3px;
+    padding: 0;
+    li{
+      list-style-type: none;
+      list-style-position: inside;
+    }
+  }
+}
+
+.creditLi{
+  padding: 0px 0px 30px 0px;
+  background-color: white;
+  h4{
+    color: #ff0066;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  ul{
+    li{
+      color: #03a3a3;
+      list-style-type:disc;
+      padding: 4px;
+      letter-spacing: 2px;
+      padding: 0px;
+
+    }
+  }
+}

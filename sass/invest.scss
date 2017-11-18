@@ -1,0 +1,124 @@
+@import 'media_queries';
+
+@media (max-width: #{$tablet-width}) {
+  .nav {
+    font-size: 18px;
+  }
+  .invest{
+    width: 100%;
+    height: 400px;
+  }
+  article {
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-top: 80px solid rgba(255, 255, 255, 0.5);
+    height: 380px;
+  }
+  h1 {
+    top: 40%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
+  .nav {
+    font-size: 20px;
+  }
+  .invest{
+    width: 100%;
+    height: 500px;
+  }
+  .decoration{
+    border-right: 1px solid rgba(0,0,0,.1);
+  }
+  article {
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-top: 40px solid rgba(255, 255, 255, 0.5);
+    height: 480px;
+  }
+  h1 {
+    top: 40%;
+    font-size: 50px;
+  }
+}
+
+@media (min-width:#{$desktop-width+1px}) {
+  .nav {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  .invest{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+  }
+  .decoration{
+    border-right: 1px solid rgba(0,0,0,.1);
+  }
+  article {
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-top: 40px solid rgba(255, 255, 255, 0.5);
+    height: 600px;
+  }
+  h1 {
+    top: 40%;
+    font-size: 50px;
+  }
+}
+
+.nav {
+  background-color: inherit;
+  visibility:visible;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  z-index: 100;
+}
+.decoration {
+  color: black;
+  background: inherit;
+  font-family: 'Oswald', sans-serif;
+}
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  margin-top: 0;
+}
+h1 {
+  position: absolute;
+  width: 100%;
+  letter-spacing: 4px;
+  color: #ff0066;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+.navList  {
+  margin:0 auto;
+  padding: 0;
+  list-style: none;
+  height: 20%;
+  text-align: center;
+}
+.decoration {
+  float:right;
+  padding: 3px 0px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hover:hover {
+  color: #ff0066;
+  z-index: 200;
+}

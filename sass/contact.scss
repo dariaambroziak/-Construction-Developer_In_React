@@ -2,37 +2,40 @@
 
 @media (max-width: #{$tablet-width}) {
 
-.item, .contactWithUs{
-  width: 94%;
-  margin: 3%;
-}
-
+  .item, .contactWithUs{
+    width: 100%;
+  }
 }
 
 @media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
 
   .item, .contactWithUs{
-    width: 46%;
-    margin: 2%;
+    width: 50%;
   }
-  .contactWithUs{
-    margin-top: 7%;
+  .item__form{
+    margin-bottom: 3px;
   }
-
+  .frame{
+    height: 330px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width:#{$desktop-width+1px}) {
 
   .item, .contactWithUs{
-    width: 46%;
-    margin: 2%;
+    width: 50%;
   }
-  .contactWithUs{
-    margin-top: 7%;
+  .item__form{
+    margin:4px;
   }
-
+  .frame{
+    height: 380px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
-
 
 
 .frame{
@@ -49,7 +52,6 @@
 
 .item, .contactWithUs{
   background-color:white;
-
   h3{
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -69,7 +71,6 @@
   outline: none;
   background-color: #d6d6c2;
 }
-
 
 .send{
   width: 50%;

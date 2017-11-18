@@ -1,34 +1,32 @@
 @import 'media_queries';
 
 @media (max-width: #{$tablet-width}) {
-
   .tile {
   	width: 20vw;
   }
 }
 
 @media (min-width:#{$tablet-width+1px}) and (max-width:#{$desktop-width}) {
-
   .tile {
   	width: 25vw;
   }
 }
 
 @media (min-width:#{$desktop-width+1px}) {
-
   .tile {
   	width: 25vw;
   }
 }
 
 .gallery{
+  clear: both;
   width: 100%;
   background:grey;
   z-index: -1;
   padding: 10px;
 }
+
 .tiles {
-	// padding: 6vh 10vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -36,6 +34,7 @@
 	position: relative;
   border: 10px solid rgba(255, 255, 255, 0.5);
 }
+
 .tile {
 	margin: 10px;
 	cursor: pointer;
